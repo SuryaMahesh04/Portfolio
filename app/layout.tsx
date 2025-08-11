@@ -17,8 +17,11 @@ export const metadata: Metadata = {
   title: "Surya Mahesh - Director of Technology & Recruitment",
   description:
     "Leading technology innovation, building future-ready teams, and delivering impactful digital solutions.",
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+  icons: {
+    icon: "/icon.png", // or .png/.svg
+  },
+};
 
 export default function RootLayout({
   children,
