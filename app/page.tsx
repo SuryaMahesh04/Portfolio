@@ -248,27 +248,16 @@ export default function Home() {
         </motion.div>
 
         {/* Enhanced Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 7.5, duration: 1 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-            className="w-6 h-10 border-2 border-[#00FFAB] rounded-full flex justify-center cursor-pointer"
-            whileHover={{ scale: 1.2, borderColor: "#FF00E6" }}
-            onClick={nextAnimation}
-          >
+        
+          
             <motion.div
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               className="w-1 h-3 bg-[#00FFAB] rounded-full mt-2"
             />
           </motion.div>
-        </motion.div>
-      </motion.div>
+        
+      
 
       {/* Enhanced Floating Elements */}
       <motion.div style={{ y: y2 }} className="absolute top-20 left-10 w-24 h-24 rounded-full opacity-20">
