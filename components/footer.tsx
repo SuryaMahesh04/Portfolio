@@ -7,7 +7,7 @@ import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react"
 export function Footer() {
   const socialLinks = [
     { icon: Github, href: "https://github.com/SuryaMahesh04", label: "GitHub" },
-    { icon: Linkedin, href: "www.linkedin.com/in/suryamahesh004", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/suryamahesh004/", label: "LinkedIn" },
     { icon: Instagram, href: "https://www.instagram.com/suryamahesh4/", label: "Instagram" },
     { icon: Mail, href: "mailto:suryamaheshguduri@gmail.com", label: "Email" },
   ]

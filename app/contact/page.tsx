@@ -37,7 +37,7 @@ const contactInfo = [
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/SuryaMahesh04", label: "GitHub", color: "#00FFAB" },
-  { icon: Linkedin, href: "www.linkedin.com/in/suryamahesh004", label: "LinkedIn", color: "#FF00E6" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/suryamahesh004/", label: "LinkedIn", color: "#FF00E6" },
   { icon: Instagram, href: "https://www.instagram.com/suryamahesh4/", label: "Instagram", color: "#4D9EFF" },
 ]
 

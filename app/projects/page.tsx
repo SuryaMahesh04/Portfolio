@@ -17,7 +17,7 @@ const projects = [
     description: "Revolutionary IoT smart shoe with integrated safety and fitness tracking capabilities.",
     longDescription:
       "Taptivate represents the future of wearable technology, combining advanced IoT sensors with machine learning algorithms to create an intelligent footwear solution. The system monitors gait patterns, detects falls, tracks fitness metrics, and provides real-time safety alerts.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/taptivate.png",
     technologies: ["IoT", "Machine Learning", "React Native", "Python", "TensorFlow", "Bluetooth"],
     features: [
       "Real-time gait analysis and correction",
@@ -29,8 +29,7 @@ const projects = [
     ],
     color: "#00FFAB",
     icon: Smartphone,
-    rating: 4.9,
-    users: "10K+",
+   
   },
   {
     id: 2,
@@ -39,7 +38,7 @@ const projects = [
     description: "Advanced geolocation-based attendance tracking system with real-time monitoring.",
     longDescription:
       "AttendTrace revolutionizes workforce management through precise geolocation technology. The system ensures accurate attendance tracking while maintaining privacy and security standards, featuring advanced anti-spoofing mechanisms and comprehensive reporting.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/attendtrace.png",
     technologies: ["React", "Node.js", "MongoDB", "GPS API", "WebRTC", "Docker"],
     features: [
       "Precise GPS-based check-in/out",
@@ -51,8 +50,6 @@ const projects = [
     ],
     color: "#FF00E6",
     icon: MapPin,
-    rating: 4.7,
-    users: "5K+",
   },
   {
     id: 3,
@@ -61,7 +58,7 @@ const projects = [
     description: "Revolutionary hands-free computer control system using gesture and voice recognition.",
     longDescription:
       "This cutting-edge interface system enables complete computer control without traditional input devices. Using advanced computer vision and natural language processing, users can navigate, control applications, and perform complex tasks through intuitive gestures and voice commands.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/gestura.png",
     technologies: ["Python", "OpenCV", "TensorFlow", "Speech Recognition", "MediaPipe", "PyQt"],
     features: [
       "Real-time gesture recognition",
@@ -73,8 +70,7 @@ const projects = [
     ],
     color: "#4D9EFF",
     icon: Hand,
-    rating: 4.8,
-    users: "3K+",
+    
   },
 ]
 
@@ -197,8 +193,7 @@ export default function Projects() {
                     className="flex items-center space-x-1 glass px-3 py-1 rounded-full"
                     whileHover={{ scale: 1.1 }}
                   >
-                    <span className="text-sm font-semibold text-white">{project.users}</span>
-                    <span className="text-xs text-gray-400">users</span>
+                    
                   </motion.div>
                 </div>
               </div>
@@ -263,28 +258,7 @@ export default function Projects() {
                         whileTap={{ scale: 0.95 }}
                         data-magnetic
                       >
-                        <Button
-                          className="w-full font-bold py-3 rounded-xl relative overflow-hidden group"
-                          style={{
-                            backgroundColor: project.color,
-                            color: "#000",
-                          }}
-                        >
-                          <motion.div
-                            className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20"
-                            whileHover={{ scale: 1.5 }}
-                            transition={{ duration: 0.3 }}
-                          />
-                          <span className="relative z-10 flex items-center justify-center">
-                            Learn More
-                            <motion.div
-                              animate={{ x: [0, 5, 0] }}
-                              transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
-                            >
-                              <Rocket className="ml-2" size={18} />
-                            </motion.div>
-                          </span>
-                        </Button>
+                        
                       </motion.div>
                     </RippleEffect>
                   </DialogTrigger>
